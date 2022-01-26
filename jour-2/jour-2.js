@@ -81,27 +81,40 @@ var min = 1;
 var max = 6;
 
 var random = Math.floor(Math.random() * (max - min + 1) + min);
+if(random == 6){
+    console.log("Yes, i win")
+}
+else{
+    console.log("So close")
+}
 
-console.log(random)
+
 
 // Bonus 2
 
 var month = "January";
 
 switch(month){
+    case "November":
+    case "December":
     case "January":
-    console.log("Winter");
-    break;
     case "February":
+    case "March":
+    console.log("Winter");
+        break;
+    case "April":
+    case "May":
+    case "June":
         console.log("Spring");
         break;
-    case "March":
+    case "July":
+    case " August":
         console.log("Summer");
         break;
-    default:
-        console.log("fall")
+    case "September":
+    case "October":
+        console.log("Fall")
 }
+// Bonus III
 
-var month = "April"
-
-
+roundedNumber = 3.6;
