@@ -7,8 +7,8 @@ console.log(integer,float);
 // 02 Convert
 
 var basic = 34;
-var stringfield = basic.toString();
-console.log(stringfield);
+var stringified = basic.toString();
+console.log(stringfied);
 
 // 03 Round
 
