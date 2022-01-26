@@ -8,7 +8,7 @@ console.log(integer,float);
 
 var basic = 34;
 var stringified = basic.toString();
-console.log(stringfied);
+console.log(stringified);
 
 // 03 Round
 
