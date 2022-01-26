@@ -116,5 +116,3 @@ switch(month){
         console.log("Fall")
 }
 // Bonus III
-
-roundedNumber = 3.6;
