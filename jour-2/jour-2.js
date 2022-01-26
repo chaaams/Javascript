@@ -65,3 +65,43 @@ if(password.length > 5){
 
 
 // 08 Condition III
+
+if(score >= limit && password.length > 5){
+    console.log("Everything is good")
+}
+if(score <= limit || password.length > 5){
+    console.log("Something is good")
+}
+else{
+    console.log("Nothing is good")
+}
+
+// Bonus 1
+var min = 1;
+var max = 6;
+
+var random = Math.floor(Math.random() * (max - min + 1) + min);
+
+console.log(random)
+
+// Bonus 2
+
+var month = "January";
+
+switch(month){
+    case "January":
+    console.log("Winter");
+    break;
+    case "February":
+        console.log("Spring");
+        break;
+    case "March":
+        console.log("Summer");
+        break;
+    default:
+        console.log("fall")
+}
+
+var month = "April"
+
+
