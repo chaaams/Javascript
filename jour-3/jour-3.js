@@ -54,13 +54,18 @@ for(var i = sentence.length-1; i >= 0; i--){
 console.log("06 Reverse --> ",result);
 
 // Bonus
+;
 
 for(var i = 0; i <= 100; i++){
-    if(i % 3===0){
-        console.log("Bonus --> Fizz")
+    var result = "";
+    if(i % 3 === 0){
+        result = result + "fizz";
     }
     if(i % 5 === 0){
-        console.log("Bonus --> buzz")
+        result += "buzz"
     }
-    
+    if( i % 7 !== 0){
+        console.log(result || i );
+    }
+
 }
