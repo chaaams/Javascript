@@ -41,5 +41,20 @@ function checkIfEven(num){
 checkIfEven(4);
 checkIfEven(5);
 
+// 04 Compare
+
+function compare (num1,num2){
+    if(num1>num2){
+        console.log("04 Compare --> num1 is Bgger");
+    }
+    else if(num1===num2){
+        consle.log("04 Compare --> both are the same")
+    }
+    else if(num2>num1){
+        console.log("04 Compare --> num2 is bigger")
+    }
+}
+
+compare(45,315);
 
 
