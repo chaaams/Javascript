@@ -30,15 +30,16 @@ console.log("02 Order --> ",cat2['isCute']);
 // 03 Even
 
 function checkIfEven(num){
-    for(var i = 0; i<= 10; i++){
-        if(num % 2 === 0){
-            console.log("03 Even --> even")
-        }
-        else{
-            console.log("03 Even --> odd")
-        }
+    if(num %2 === 0){
+        console.log("03 Even --> even")
+    }
+    else{
+        console.log("03 Even --> odd")
     }
 }
 
-console.log("03 Even --> ")
+checkIfEven(4);
+checkIfEven(5);
+
+
 
