@@ -48,7 +48,7 @@ function compare (num1,num2){
         console.log("04 Compare --> num1 is Bgger");
     }
     else if(num1===num2){
-        consle.log("04 Compare --> both are the same")
+        console.log("04 Compare --> both are the same")
     }
     else if(num2>num1){
         console.log("04 Compare --> num2 is bigger")
@@ -56,5 +56,7 @@ function compare (num1,num2){
 }
 
 compare(45,315);
+compare(75,2);
+compare(50,50);
 
 
