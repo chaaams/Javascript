@@ -54,7 +54,7 @@ for(var i = sentence.length-1; i >= 0; i--){
 console.log("06 Reverse --> ",result);
 
 // Bonus
-;
+
 
 for(var i = 0; i <= 100; i++){
     var result = "";
@@ -67,5 +67,12 @@ for(var i = 0; i <= 100; i++){
     if( i % 7 !== 0){
         console.log(result || i );
     }
-
 }
+
+// Bonus II
+
+while(i <= limit){
+    tota = total + i;
+    i++;
+}
+console.log("Bonus II --> ", total)
