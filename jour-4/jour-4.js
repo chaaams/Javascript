@@ -21,11 +21,11 @@ console.log("02 Order --> ",cat2);
 var cats = [cat,cat2];
 console.log("02 Order --> ",cats);
 
-console.log("02 Order --> ",cat.age);
-console.log("02 Order --> ",cat['age']);
+console.log("02 Order --> ",cats[0].age);
+console.log("02 Order --> ",cats[0]["age"]);
 
-console.log("02 Order --> ",cat2.isCute);
-console.log("02 Order --> ",cat2['isCute']);
+console.log("02 Order --> ",cats[1].isBig);
+console.log("02 Order --> ",cats[1]['isBig']);
 
 // 03 Even
 
@@ -59,4 +59,24 @@ compare(45,315);
 compare(75,2);
 compare(50,50);
 
+// 05 Add Up
+    var i = 0;
+    var total = 0;
+function addUp(num){
 
+    for(i=0; i <= num; i++){
+        total= total + i;
+    }
+    console.log("05 Add Up --> ",total)
+}
+addUp(12);
+
+// 06 Time 
+
+function format (num){
+    h = Math.floor(num / 3600);
+    m = Math.floor(num% 3600 / 60);
+    s = Math.floor(num% 3600 %60);
+    console.log("06 Time --> ",h,":",m,":",s,)
+}
+format(800);
