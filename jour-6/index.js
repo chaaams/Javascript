@@ -56,6 +56,7 @@ var schema = {
   },
 };
 
+
 prompt.start();
 prompt.get(schema, (err, res) => {
     console.log(res);
