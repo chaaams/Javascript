@@ -75,4 +75,5 @@ while(i <= limit){
     tota = total + i;
     i++;
 }
+
 console.log("Bonus II --> ", total)

@@ -20,25 +20,26 @@ console.log(rounded);
 
 var test = 12;
 var bis = 5;
-console.log("12+5 = ",test+bis);
-console.log("12-5 = ",test-bis);
-console.log("12*5 = ",test*bis);
-console.log("12/5 = ",test/bis);
-console.log("12 ** 5 = ",test**bis);
-console.log("12 % 5 = ",test%bis);
+console.log("12 + 5 => ",test+bis);
+console.log("12 - 5 => ",test-bis);
+console.log("12 * 5 => ",test*bis);
+console.log("12 / 5 => ",test/bis);
+console.log("12 ** 5 => ",test**bis);
+console.log("12 % 5 => ",test%bis);
 
+console.log("-----------------------------------");
 // 05 Comparaison
 
 var test = 143;
 var bis = 219;
-console.log("143 > 219 =",test > bis)
-console.log("143 < 219 =",test < bis)
-console.log("143 >= 219 =",test >= bis)
-console.log("143 <= 219 =",test <= bis)
-console.log("143 == 219 =",test == bis)
-console.log("143 === 219 =",test === bis)
-console.log("143 != 219 =",test != bis)
-console.log("143 !== 219 =",test !== bis)
+console.log("143 > 219 =>",test > bis)
+console.log("143 < 219 =>",test < bis)
+console.log("143 >= 219 =>",test >= bis)
+console.log("143 <= 219 =>",test <= bis)
+console.log("143 == 219 =>",test == bis)
+console.log("143 === 219 =>",test === bis)
+console.log("143 != 219 =>",test != bis)
+console.log("143 !== 219 =>",test !== bis)
 
 
 // 06 Condition

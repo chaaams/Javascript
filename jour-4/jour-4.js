@@ -79,4 +79,15 @@ function format (num){
     s = Math.floor(num% 3600 %60);
     console.log("06 Time --> ",h,":",m,":",s,)
 }
-format(800);
+
+format(3700);
+//function format (num){
+//    let hours = 0;
+//    let minutes = 0;
+//    let seconds  = 0;
+//    let restHours = num % 3600;
+//
+//    return hours + ":"+ minutes + ":" + seconds
+//}
+
+// Bonus
