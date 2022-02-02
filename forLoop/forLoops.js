@@ -18,12 +18,15 @@ for(var i = 100; i <= 1000; i++){
 console.log("02 Comptons --> ",result)
 
 // 03 Chanceux
-var total = 0;
-for(let i = 0; i < 20; i++){
-    let result = (Math.ceil(Math.random() * 6));
-    console.log(result);
-    if(i >= 5){
-        total = result + total;
+var dicesSum = 0;
+var min = 1;
+var max = 6;
+for(let i = 1; i <= 20; i++){
+    let diceRoll = Math.floor(Math.random() * (max - min + 1) + min);
+    if(diceRoll >= 5){
+        dicesSum = dicesSum + diceRoll;
     }
 }
-console.log("03 Chanceux --> ",total)
+console.log("03 Chanceux --> ",dicesSum)
+
+
