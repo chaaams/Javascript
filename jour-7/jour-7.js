@@ -96,10 +96,8 @@ let cakes = [
 // 	}
 // })
 // console.log(chocolateFlavour);
-const chocolateCakes = cakes					// méthode 2
-  .filter((cake) => cake.flavor === "chocolate")
-  .map((cake) => {
-    cake.status = "sold out !";
+let chocolateCakes = cakes.filter((cake) => cake.flavor === "chocolate").map((cake) => {
+    cake.status = "sold out !";		// méthode 2
     return cake;
   });
   console.log(chocolateCakes);
