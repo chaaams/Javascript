@@ -60,7 +60,7 @@
 
 // 06 Cake
 
-let cake = [
+let cakes = [
 	{
 		name: "cake",
 		flavor: "vanilla",
@@ -88,11 +88,21 @@ let cake = [
 	},
 ]
 
-let chocolateFlavour = [];
-let chocolateCake = cake.filter(function(status){
-	if(status.flavor === "chocolate"){
-		chocolateFlavour.push(status);	
-	}
-})
-console.log(chocolateFlavour);
+// let chocolateFlavour = [];						// méthode 1
+// let chocolateCake = cake.filter(function(status){
+// 	if(status.flavor === "chocolate"){
+// 		status.status = "sold out!"
+// 		chocolateFlavour.push(status);	
+// 	}
+// })
+// console.log(chocolateFlavour);
+const chocolateCakes = cakes					// méthode 2
+  .filter((cake) => cake.flavor === "chocolate")
+  .map((cake) => {
+    cake.status = "sold out !";
+    return cake;
+  });
+  console.log(chocolateCakes);
+
+
 
