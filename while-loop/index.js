@@ -1,10 +1,10 @@
 // 01 - Comptons
-var i = 50;
-while(i <= 200){
-    if(i %2 === 0){
+var i = 50; // Valeur de départ
+while(i <= 200){    // tant que 50 est inférieur ou égal a 200:
+    if(i %2 === 0){ // si i modulo 2 est égal a 0 :
         console.log("01 comptons --> ", i)
     }
-    i++;
+    i++;               // incrémentation
 }
 
 // 02 Try again
