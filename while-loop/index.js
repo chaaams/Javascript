@@ -12,9 +12,9 @@ let dice = null;
 let count = 0;
 let min = 1;
 let max = 6;
-while(dice <= 6){
-    dice = Math.random() * (max - min + 6) ;
-    count++;
+while(dice <= 6){                               // tant que dice ne vaut pas 6
+    dice = Math.random() * (max - min + 6) ;    // dice est égal à la fonction Math random avec une limite de 6
+    count++;                                    // +1 a la var count à chaque tour
 }
 console.log("02 Try again --> ",count)
 
