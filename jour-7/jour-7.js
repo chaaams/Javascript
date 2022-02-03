@@ -88,6 +88,11 @@ let cake = [
 	},
 ]
 
-
-
+let chocolateFlavour = [];
+let chocolateCake = cake.filter(function(status){
+	if(status.flavor === "chocolate"){
+		chocolateFlavour.push(status);	
+	}
+})
+console.log(chocolateFlavour);
 
