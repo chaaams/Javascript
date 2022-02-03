@@ -23,9 +23,9 @@ console.log("02 Try again --> ",count)
 let usainBolt = 0;
 let tysonGay = 0;
 while(usainBolt <= 100 && tysonGay <= 100){     // tant que usain bolt et tyson gay sont inférieur ou égal à 100:
-    usainBolt += Math.ceil(Math.random()*10);   
-    tysonGay += Math.ceil(Math.random()*10);
-    console.log("usain bolt -->",usainBolt,"tyson gay -->",tysonGay);
+    usainBolt += Math.ceil(Math.random()*10);   // bolt égale à bolt + Math.ceil en par. Math.random et * 10
+    tysonGay += Math.ceil(Math.random()*10);    // Tyson égale à tyson + Math.ceil en par. Math.random et * 10
+    console.log("usain bolt -->",usainBolt,"tyson gay -->",tysonGay);   // résultat à chaque tour
 }
 if(usainBolt > 100 && tysonGay <= 100){
     console.log("Usain is the winner");
