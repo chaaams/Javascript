@@ -19,16 +19,32 @@ const request = require('request');
 
 // 02 - Chuck Norris
 
-const apiBase = 'https://api.chucknorris.io/jokes/random';
-function getFact(){
-    request.get(apiBase, function(err,res,body){
-        if (err){
-            console.log(err);
-            return;
-        }
-        let fact = JSON.parse(body)
-        console.log(fact.value)
-    })
+// const apiBase = 'https://api.chucknorris.io/jokes/random';
+// function getFact(){
+//     request.get(apiBase, function(err,res,body){
+//         if (err){
+//             console.log(err);
+//             return;
+//         }
+//         let fact = JSON.parse(body)
+//         console.log(fact.value)
+//     })
 
+// }
+// getFact();
+
+// 03 - Pokémon
+
+const apiBase = 'https://pokeapi.co/api/v2/pokemon/';
+console.log(apiBase);
+function catchPokemon(id){
+    request.get(apiBase + id, function(err,res,body){
+        if(err){
+            console.log(err);
+        }
+        let pokemon = JSON.parse(body)
+        console.log(pokemon.name)
+        
+    })
 }
-getFact();
+catchPokemon(25)
