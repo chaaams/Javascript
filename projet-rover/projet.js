@@ -16,7 +16,7 @@ let rover = {
     x: 0,
     travelLog: []
 };
-
+        //direction du rover
 let turnLeft = (rover) =>{
     if(rover.direction === "N"){
       rover.direction ="W";  
@@ -47,7 +47,7 @@ let turnRight = (rover) =>{
       }
       console.log(rover);
 }
-
+        // rover moving
 let moveForward = (rover) =>{
     if(rover.direction === "N"){
         rover.y--;
@@ -68,8 +68,7 @@ let moveForward = (rover) =>{
     }
         console.log(rover)
 }
-
-
+        // rover piloting
 let pilotRover = (pilot) =>{
     for(let i = 0; i < pilot.length; i++){
         let travelLog = rover.travelLog;
